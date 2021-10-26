@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #text {
+        color: green;
+      }
+      /*클래스 명을 지정하는 경우 우선순위가 올라감*/
+      .area p {
+        color: red;
+      }
+      p {
+        color: seagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <!--우선순위
+       1. !important : 1000점
+       2. 인라인 선언 : 500점
+       3. 아이디 선택자 : 100점
+       4. 클래스 선택자 : 10점 ( :hover, :link, :active)
+       5. 태그 선택자 : 1점 (::before, ::after)
+       6. 전체 선택자
+       7. 상속 
+    
+       :not() => 점수가 없음, 밀려서 적용이 안될 수 있음
+       :not(h1), :not(.box) : 우선순위가 가로에 들어간 선택자로 적용됨-->
+
+    <div class="area">
+      <p id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio saepe
+        temporibus sint numquam aliquam! Placeat enim, in repudiandae
+        necessitatibus maiores eum eaque recusandae officia omnis, hic nulla
+        error fuga excepturi?
+      </p>
+      <p id="text2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio saepe
+        temporibus sint numquam aliquam! Placeat enim, in repudiandae
+        necessitatibus maiores eum eaque recusandae officia omnis, hic nulla
+        error fuga excepturi?
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        /*문서전체에 공백을 허용하지 않기 위함*/
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        /*색상은 영어로 제공하거나, 16진수, rgb 값으로 사용해도 됨
+          16진수는 6자리이나 333333같은 경우 같은 값이 반복되는 경우 축약해서 3자리만 사용*/
+        background-color: #333;
+      }
+      li {
+        float: left;
+        list-style: none;
+      }
+      li a {
+        display: inline-block;
+        padding: 14px 16px;
+      }
+      a:hover {
+        background-color: blueviolet;
+      }
+      a:link {
+        text-decoration: none;
+        color: white;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="clearfix">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Content</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*같은 스타일을 지정하고 싶은 부분이 있을 때는 콤마를 사용하여
+      추가할 수 있음, 뒤에 이어서 인접형제 선택자를 사용할 수 있음*/
+
+      #title,
+      nav ~ h2 {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">그룹 선택자</h1>
+      <h2>형제 1</h2>
+      <h2>형제 2</h2>
+      <nav>
+        <h2>제목</h2>
+      </nav>
+      <h2>타이틀 1</h2>
+      <h2>타이틀 2</h2>
+    </div>
+  </body>
+</html>

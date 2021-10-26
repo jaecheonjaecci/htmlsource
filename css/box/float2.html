@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .child1 {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        color: white;
+        font-size: 30px;
+        margin: 10px;
+        /* 수평으로 쌓기 
+        1. display: inline-block;
+        2. float: left; */
+        float: left;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: violet;
+        /* clear: left; */
+        /*clear : float=>left로 지정된 속성을 없앰*/
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent1 clearfix">
+      <div class="child1">1</div>
+      <div class="child1">2</div>
+      <div class="child1">3</div>
+    </div>
+    <div class="box">4</div>
+    <p>
+      float는 요소들을 떠 있게 하기 때문에 float가 아닌 요소가 다음에 오는 경우
+      원래 있던 요소 밑에 깔리는 경우가 발생함. float를 사용하고 다음 요소에
+      영향을 주기 때문에 조치가 필요함 1. claer를 사용 => float를 더이상 흐르지
+      않게함 / 2.claer::After => 3번 뒤에 공백을 집어넣고, 블록 기능을 지정함
+    </p>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <div>
+        <!--타입을 맞추면 라벨을 클릭했을 때 텍스트필드에 커서가 나타남-->
+        <label for="name">이름</label>
+        <!--autoficus : 입력받을 텍스트필드에 커서를 깜빡이게 만듦
+            placeholder : 입력받을 텍스트에 힌트를 보여줌, 클릭하면 사라짐-->
+        <input
+          type="text"
+          name="name"
+          id="name"
+          autofocus
+          placeholder="이름을 입력하세요"
+        />
+      </div>
+      <div>
+        <label for="password">비밀번호</label>
+        <!--비밀번호로 지정하면 입력하는 정보를 안보이게 처리해줌-->
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <label for="gender">성별</label>
+        <!--swing에서 radio button이랑 같은 기능, 둘 중 하나 선택
+            name을 동일하게 가지고 있어야 하나의 그룹이 되어 선택할 수 있음-->
+        <input type="radio" name="gender" id="" value="" />남성
+        <input type="radio" name="gender" id="" value="" />여성
+      </div>
+      <div>
+        <!--swing에서 checkbox랑 같은 기능-->
+        <input type="checkbox" name="fruits" id="" value="" />사과
+        <input type="checkbox" name="fruits" id="" />바나나
+        <input type="checkbox" name="fruits" id="" />딸기
+        <input type="checkbox" name="fruits" id="" />포도
+        <input type="checkbox" name="fruits" id="" />수박
+        <input type="checkbox" name="fruits" id="" />키위
+      </div>
+      <div>
+        <!--이렇게만 사용하면 submit이랑 같은 기능-->
+        <button>버튼1</button>
+        <!--이렇게 타입을 버튼으로 주면 위에서 사용한 버튼이랑 같은 기능
+             submit 기능이 사라짐-->
+        <button type="button">버튼</button>
+        <button type="reset">다시 작성</button>
+        <button type="submit">전송</button>
+      </div>
+      <div>
+        <!--textarea : 큰 텍스트 상자 생성
+                         사용자에게 여러줄로 입력을 받는 경우-->
+        <textarea name="contents" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <!--select : jcombobox 생성, 옵션으로 선택지 제공
+         selected를 주면 처음에 보여줄 디폴트 값을 지정할 수 있음-->
+        <select name="fruits2" id="">
+          <option value="사과">사과</option>
+          <option value="딸기" selected>딸기</option>
+          <option value="수박">수박</option>
+          <option value="바나나">바나나</option>
+        </select>
+      </div>
+      <div>
+        <!--input file : 파일 불러오기 기능-->
+        <input type="file" name="file" id="" />
+      </div>
+      <div>
+        <fieldset>
+          <!--fieldset : 테두리가 둘러짐, legend는 타이틀-->
+          <legend>입력양식</legend>
+          <div>
+            <label for="password">비밀번호</label>
+            <!--비밀번호로 지정하면 입력하는 정보를 안보이게 처리해줌-->
+            <input type="password" name="password" id="password" />
+          </div>
+          <div>
+            <label for="gender">성별</label>
+            <!--swing에서 radio button이랑 같은 기능, 둘 중 하나 선택
+                name을 동일하게 가지고 있어야 하나의 그룹이 되어 선택할 수 있음-->
+            <input type="radio" name="gender" id="" value="" />남성
+            <input type="radio" name="gender" id="" value="" />여성
+          </div>
+          <input type="text" name="" id="" />
+        </fieldset>
+      </div>
+      <div></div>
+      <div>
+        <!--input type : email에 이메일을 형식을 제대로 작성하지 않고 
+            전송 버튼을 누르면,안내창이 뜸(유효성검사) - required
+            디테일하게 검사를 해주진 못하고 골뱅이가 들어갔는지 정도만 체크-->
+        <label for="email">email</label>
+        <input type="email" name="" id="" required />
+      </div>
+      <div>
+        <input type="date" name="" id="" />
+        <input type="datetime" name="" id="" />
+        <input type="datetime-local" name="" id="" />
+      </div>
+      <div>
+        <!--검증을 위해서 required와 패턴을 지정해 주면, 유효성을 확인하고 알려줌-->
+        <input
+          type="tel"
+          name=""
+          id=""
+          pattern="[0-9]{3}-[0-9]{4}--[0-9]{4}"
+          required
+        />
+      </div>
+      <div>
+        <!--number : 넘버만 가능, 숫자를 지정할 수 있음-->
+        <!--최대값(max), 최소값(min), 증가값(step)을 지정가능함-->
+        <input type="number" name="" id="" max="120" min="85" step="5" />
+      </div>
+      <div>
+        <input type="button" value="제출" />
+        <input type="submit" value="전송" />
+        <input type="reset" value="초기화" />
+      </div>
+    </form>
+  </body>
+</html>

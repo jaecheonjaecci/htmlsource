@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: tomato;
+      }
+      .box {
+        background-color: white;
+        /* height: 50px; */
+        /* overflow: auto;  */
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .clearfix::after {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <!--overflow : 요소의 크기 이상으로 내용이 넘쳤을 때 어떨게 처리할 것인가
+          auto : 넘친 부분이 있는 경우 잘라내고 스크롤바 이용
+          hidden : 넘친 부분을 잘라내고 보이지 않도록 함
+          scroll : 넘친 부분을 잘라내고 스크롤바를 이용하여 볼 수 있도록 함
+          visible : 넘친 부분을 자르지 않고 그대로 보여줌(default)
+          -->
+    <div class="box">
+      <img src="../img/left-arrow.png" alt="왼쪽 화살표" class="left" />
+      <img src="../img/right-arrow.png" alt="오른쪽 화살표" class="right" />
+
+      <p class="clearfix">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum tempore
+        <!-- rem animi vitae illo laudantium repellat nulla neque sapiente totam,
+        quos nam, porro cupiditate! Quidem et nihil, velit tenetur fuga,
+        pariatur quas excepturi eum deleniti voluptas quisquam quo, eveniet
+        temporibus delectus optio architecto consequatur alias neque iste! Error
+        voluptate nulla cum similique hic laudantium natus quia, sunt facilis
+        consequuntur commodi odit necessitatibus, quibusdam laboriosam
+        blanditiis reprehenderit iusto aperiam saepe exercitationem cupiditate
+        itaque veniam, nemo voluptas? Cumque dolore consectetur nulla. Ipsa,
+        voluptate culpa quam veniam, praesentium eius odio delectus architecto
+        corporis dolorum fuga laboriosam ipsam reprehenderit accusamus mollitia
+        repellendus quisquam! Odio. -->
+      </p>
+    </div>
+  </body>
+</html>

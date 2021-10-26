@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: red !important;
+      }
+      p {
+        color: seagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>스타일 우선 순위</h1>
+    <p style="color: sienna">
+      1. 사용자 스타일 시트 <br />
+      2. 제작사 스타일 시트(!important) <br />
+      3. 제작사 일반 스타일<br />
+      4. 기본적인 브라우저 스타일 시트
+    </p>
+    <p>
+      적용범위 <br />
+      1. 인라인 스타일 <br />
+      2. id 스타일 <br />
+      3. 클래스 스타일 <br />
+      4. 태그 스타일
+    </p>
+  </body>
+</html>
+<!--    1. 사용자 스타일 시트 <br>
+        : 저시력자를 위한 시트
+
+        2. 제작사 스타일 시트(!important) <br>
+        : p {color: red !important;}
+          p {color: seagreen;}
+          => import가 붙은 스타일 시트가 적용됨, 순서는 상관이 없음
+
+        3. 제작사 일반 스타일<br />
+        :.ecosystem {color: red;}
+         .animal{color: black;}
+
+        4. 기본적인 브라우저 스타일 시트
+        : 따로 지정하지 않아도 브라우저(ex.크롬)들이 만들어 주는 기본 스타일시트,
+          ex) 글자가 시작되는 위치 등등...-->

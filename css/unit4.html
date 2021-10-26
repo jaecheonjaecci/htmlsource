@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-size: 13px;
+      }
+      body {
+        font-size: 12px;
+      }
+      /*box는 선택자, 어떤 형태로 줄것인지 지정*/
+      .box {
+        float: left;
+        margin-right: 20px;
+        background-color: blue;
+        color: #fff;
+        text-align: center;
+      }
+      /*.clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }*/
+      .box_px {
+        width: 160px;
+        height: 160px;
+      }
+      /* font 사이즈가 아무것도 없을 때 16px * 10 
+         :root => 13px * 10 
+          body => 12px * 10 
+          기본 정해진 폰트 크기가 중요함 */
+
+      .box_em {
+        width: 10em;
+        height: 10em;
+      }
+      /* font 사이즈가 아무것도 없을 때 16px * 10 
+         :root => 13px * 10 (body까지 따라기지 않음) */
+
+      .box_rem {
+        width: 10rem;
+        height: 10rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper clearfix">
+      <!--클래스 이름을 box box_px로 지정 -> 위에서 .box로 사용
+          클래스 이름은 여러개로 지정가능함, 두 개 이상을 주고 싶을 경우 
+          한 칸 띄우고 적으면 됨-->
+      <div class="box box_px">PX</div>
+      <div class="box box_em">EM</div>
+      <div class="box box_rem">REM</div>
+    </div>
+  </body>
+</html>

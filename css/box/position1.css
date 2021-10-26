@@ -1,0 +1,24 @@
+.grand-parent {
+  width: 800px;
+  height: 500px;
+  border: 2px dashed lightgray;
+}
+.parent {
+  width: 500px;
+  height: 400px;
+  border: 2px dashed gray;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  border: 1px solid black;
+  font-size: 30px;
+}
+.fixed {
+  /*위치를 고정시켜서 오른쪽 밑에서 위치를 지정
+    브라우저의 크기가 바뀌어도 바뀐 크기를 기준으로 위치가 지정됨*/
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+}

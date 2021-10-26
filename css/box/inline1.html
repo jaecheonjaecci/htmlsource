@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        background-color: lime;
+        height: 300px;
+        width: 500px;
+        /*인라인요소는 블록요소와는 다르게 width, height는 임의의 값을 지정할 수 없음*/
+      }
+      div {
+        text-align: center;
+      }
+      div a {
+        background-color: mediumblue;
+        color: mintcream;
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        display: none;
+        /*inline-blokc 사용시 버튼 나열가능함*/
+      }
+    </style>
+  </head>
+  <body>
+    <!--span : 인라인 요소
+        width : 0 => 가지고 있는 내용만큼
+        height : 0 => 가지고 있는 내용만큼 -->
+    <span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolores
+      soluta cumque quis laborum facilis totam, nam officiis repellat voluptates
+      hic inventore molestias alias! Nam suscipit aperiam vel facere repellat.
+    </span>
+    <div>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+    </div>
+  </body>
+</html>

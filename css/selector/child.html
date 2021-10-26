@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--html 자식 : head, body => >를 사용하면 자식
+            자손 : head,body안에 있는 모든 태그들이 속함 => 공백을 사용하면 자손-->
+
+    <title>Document</title>
+    <style>
+      /* 자식으로 제한하고 싶으면 중간에 >를 사용함 */
+      div > h2 {
+        color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>자손 선택자</h1>
+    <div>
+      <h2 id="title">자손(하위) 선택자</h2>
+    </div>
+    <div>
+      <h2>자손(하위) 선택자</h2>
+      <h2>자손(하위) 선택자</h2>
+    </div>
+  </body>
+</html>

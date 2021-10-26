@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*div의 h1의 인접형제 h2를 의미(바로 밑에 동생만 사용할 경우*/
+      /* div h1 + h2 {
+        color: indigo;
+      } */
+
+      /*h1 뒤에 있는 h2 모두를 지정할 때 물결(~)로 표시*/
+      div h1 ~ h2 {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>인접 형제 선택자</h1>
+      <h2>형제 1</h2>
+      <h2>형제 2</h2>
+      <nav>
+        <h2>제목</h2>
+      </nav>
+    </div>
+  </body>
+</html>
